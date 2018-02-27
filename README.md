@@ -1,9 +1,6 @@
-# scipy-jupyter-notebook
-
 This quickstart consists of one microservice:
 
-
-jupyter: Runs [Jupyter](https://jupyter.org/) IPython notebook with scipy (and other data analysis libraries) installed for building, analysing and visualising models interactively.
+**Jupyter**: Runs [Jupyter](https://jupyter.org/) Julia notebook.
 
 Follow along below to get the setup working on your cluster.
 
@@ -22,7 +19,6 @@ $ # Login if you haven't already
 $ hasura login
 ```
 
-
 * You should also have [git](https://git-scm.com) installed.
 
 ```sh
@@ -33,25 +29,24 @@ $ git --version
 
 ```sh
 $ # Run the quickstart command to get the project
-$ hasura quickstart hasura/scipy-jupyter-notebook
+$ hasura quickstart anirudhm/julia-jupyter-notebook
 
 $ # Navigate into the Project
-$ cd scipy-jupyter-notebook
+$ cd julia-jupyter-notebook
 ```
 ## Deploy app
 
 ```sh
-$ # Ensure that you are in the scipy-jupyter-notebook directory
+$ # Ensure that you are in the julia-jupyter-notebook directory
 $ # Git add, commit & push to deploy to your cluster
 $ git add .
 $ git commit -m 'First commit'
 $ git push hasura master
 ```
-
 Once the above commands complete successfully, your cluster will have `jupyter` service  running. To get their URLs
 
 ```sh
-$ # Run this in the scipy-jupyter-notebook directory
+$ # Run this in the julia-jupyter-notebook directory
 $ hasura microservice list
 ```
 
@@ -88,7 +83,7 @@ Head over to the EXTERNAL-URL of your `jupyter` service.
 ### Authentication
 
 ```sh
-$ # Run this in the scipy-jupyter-notebook directory
+$ # Run this in the julia-jupyter-notebook directory
 $ hasura ms logs jupyter
 ```
 
@@ -112,7 +107,4 @@ Executing the command: jupyter notebook
         http://localhost:8888/?token=cd596a9b5e90a83283e4c9d6b792b4a58cac38e06153fd12
 
 ```
-
-Start creating notebooks and showcase your work to the world!
-
-# julia-jupyter-notebook
+Have fun creating notebooks on Hasura!
